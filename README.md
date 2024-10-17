@@ -6,4 +6,4 @@
 ## 3.	Hiển thị kết quả lên Website
 ![alt](https://github.com/tramit-work/LAB4-MachineLearning/blob/main/photos/Photo1.png)
 ## 4. Đối với các bài toán có sự so sánh 
-![alt](https://github.com/tramit-work/LAB4-MachineLearning/blob/main/photos/Photo1.png)
+![alt](https://github.com/tramit-work/LAB4-MachineLearning/blob/main/photos/Photo2.png)
