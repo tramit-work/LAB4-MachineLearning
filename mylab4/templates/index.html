@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #343a40; 
+        }
+        .card {
+            margin-bottom: 20px;
+        }
+        .card-header {
+            color: white;
+        }
+        .card-header.labels{
+            background-color: #6b0aeb; /* Green color for Decision Tree */
+        }
+        .card-header.decision-tree {
+            background-color: #28a745; /* Green color for Decision Tree */
+        }
+        .card-header.random-forest {
+            background-color: #dc3545; /* Red color for Random Forest */
+        }
+        .result {
+            background-color: #e9ecef; 
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap; 
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>LAB 4 - MACHINE LEARNING</h1>
+
+    <div class="card">
+        <div class="card-header labels">
+            Test Labels
+        </div>
+        <div class="card-body">
+            <div class="result">{{ y_test }}</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header decision-tree">
+            Decision Tree 
+        </div>
+        <div class="card-body">
+            <div class="result">{{ y_pred_tree }}</div>
+            <p>Accuracy: <strong>{{ accuracy_tree }}</strong></p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header random-forest">
+            Random Forest 
+        </div>
+        <div class="card-body">
+            <div class="result">{{ y_pred_forest }}</div>
+            <p>Accuracy: <strong>{{ accuracy_forest }}</strong></p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
